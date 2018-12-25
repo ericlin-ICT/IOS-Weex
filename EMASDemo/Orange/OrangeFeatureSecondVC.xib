@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OrangeFeatureSecondVC">
+            <connections>
+                <outlet property="colorLabel" destination="xUy-hy-mtT" id="5V8-RG-Co0"/>
+                <outlet property="playBtn" destination="Ide-W1-swg" id="Wgz-7M-Ct2"/>
+                <outlet property="themeLable" destination="VoP-vU-WXw" id="WJ4-Wd-so7"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Theme_Name=unkonw" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VoP-vU-WXw">
+                    <rect key="frame" x="40" y="20" width="175" height="33"/>
+                    <color key="backgroundColor" white="0.85614691840277779" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xUy-hy-mtT">
+                    <rect key="frame" x="40" y="73" width="295" height="554"/>
+                    <color key="backgroundColor" red="0.2207523566" green="0.65897484959999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ide-W1-swg">
+                    <rect key="frame" x="275" y="20" width="60" height="33"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="l0e-Ky-NLP"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <state key="normal" title="play"/>
+                    <connections>
+                        <action selector="jumpToFeature1:" destination="-1" eventType="touchUpInside" id="t2u-k2-C1d"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="xUy-hy-mtT" firstAttribute="top" secondItem="Ide-W1-swg" secondAttribute="bottom" constant="20" id="67P-c0-628"/>
+                <constraint firstAttribute="trailing" secondItem="Ide-W1-swg" secondAttribute="trailing" constant="40" id="9xs-V4-ky6"/>
+                <constraint firstItem="VoP-vU-WXw" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="40" id="ARd-cZ-PrR"/>
+                <constraint firstItem="xUy-hy-mtT" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="40" id="CXa-OF-HWN"/>
+                <constraint firstAttribute="bottom" secondItem="xUy-hy-mtT" secondAttribute="bottom" constant="40" id="Qj1-os-5IQ"/>
+                <constraint firstItem="VoP-vU-WXw" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="YY3-ik-wlG"/>
+                <constraint firstItem="Ide-W1-swg" firstAttribute="centerY" secondItem="VoP-vU-WXw" secondAttribute="centerY" id="fbZ-BA-0tO"/>
+                <constraint firstAttribute="trailing" secondItem="xUy-hy-mtT" secondAttribute="trailing" constant="40" id="j1G-Yu-MUY"/>
+                <constraint firstItem="Ide-W1-swg" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="llE-Dx-B9P"/>
+            </constraints>
+            <point key="canvasLocation" x="-55" y="-37"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,6 @@
+framework module AlicloudHotFixEmas {
+  umbrella header "AlicloudHotFixEmas.h"
+
+  export *
+  module * { export * }
+}
